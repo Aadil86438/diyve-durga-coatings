@@ -13,7 +13,7 @@ export const siteContent = {
     phone: '+91 8643839796',
     email: 'info@divyedurga.com',
     whatsapp: '918643839796',
-    whatsappMessage: '👋 Hi Divye Durga Team! I saw your work online & I need a quick quote for my powder coating requirement. Could you help me with pricing & turnaround time? ⚡',
+    whatsappMessage: '🌟 Hi Divye Durga Coating Works! 👑 I saw your precision powder coating work & would love an official quote for my metal components. Could you please assist me with custom pricing, finish options & priority batch turnaround? ⚡✨',
     address: 'Coimbatore, Tamil Nadu',
     location: 'Porur',
   },
