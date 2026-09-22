@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Anti-FOUC Theme Script -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'light' || (!saved && !prefersDark)) {
+            document.documentElement.classList.add('light');
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+
     <!-- SEO -->
     <title>Divye Durga Coating Works | Precision Powder Coating</title>
     <meta name="description" content="Professional powder coating services for industrial components, structures, and custom applications. Precision finishing with durable, high-quality results." />
@@ -20,8 +39,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="/diyve-durga-coatings/assets/index-CSnmDbAW.js"></script>
-    <link rel="stylesheet" crossorigin href="/diyve-durga-coatings/assets/index-Dh5vglfk.css">
+    <script type="module" crossorigin src="/diyve-durga-coatings/assets/index-8XXnwWOP.js"></script>
+    <link rel="stylesheet" crossorigin href="/diyve-durga-coatings/assets/index-YEh_GRag.css">
   </head>
   <body>
     <div id="app"></div>
