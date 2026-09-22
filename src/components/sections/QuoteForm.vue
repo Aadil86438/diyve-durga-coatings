@@ -524,40 +524,9 @@ function printReceipt() {
 </script>
 
 <style scoped>
-@media print {
-  /* Hide all elements on the website by default */
-  :deep(*) {
-    visibility: hidden !important;
-  }
-  
-  /* Make only the bill ticket and its contents visible */
-  #printable-bill,
-  #printable-bill * {
-    visibility: visible !important;
-  }
-
-  #printable-bill {
-    position: fixed !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 90% !important;
-    max-width: 650px !important;
-    margin: 0 !important;
-    padding: 24px !important;
-    border: 2px solid #C87830 !important;
-    background-color: #0F141C !important;
-    color: #FFFFFF !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    box-shadow: none !important;
-    border-radius: 16px !important;
-  }
-
-  /* Hide screen-only interactive buttons on printed PDF */
-  .no-print {
-    display: none !important;
-  }
-}
+/* Print styles are handled globally in src/index.css to ensure
+   they can suppress other Vue components (header, footer, sections).
+   Scoped CSS cannot reach outside this component's DOM tree. */
 </style>
+
 

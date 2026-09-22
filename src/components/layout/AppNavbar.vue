@@ -4,7 +4,7 @@
     :class="[
       'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
       scrolled
-        ? 'bg-bg/90 backdrop-blur-md border-b border-border/50'
+        ? 'bg-bg/90 backdrop-blur-md border-b border-border/50 shadow-sm'
         : 'bg-transparent',
     ]"
   >
@@ -27,42 +27,48 @@
           </a>
         </div>
 
-        <!-- Desktop CTA -->
-        <a
-          :href="nav.cta.href"
-          class="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 text-xs font-display font-medium tracking-widest uppercase bg-accent text-white hover:bg-accent-hover transition-colors duration-300 min-h-[40px]"
-        >
-          {{ nav.cta.label }}
-        </a>
+        <!-- Desktop CTA & Theme Toggle -->
+        <div class="hidden lg:flex items-center gap-4">
+          <ThemeToggle />
+          <a
+            :href="nav.cta.href"
+            class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-display font-medium tracking-widest uppercase bg-accent text-white hover:bg-accent-hover transition-colors duration-300 min-h-[40px] rounded-lg shadow-sm"
+          >
+            {{ nav.cta.label }}
+          </a>
+        </div>
 
-        <!-- Mobile menu button -->
-        <button
-          class="lg:hidden z-50 relative w-10 h-10 flex items-center justify-center"
-          :aria-expanded="menuOpen"
-          aria-label="Toggle navigation menu"
-          @click="toggleMenu"
-        >
-          <div class="w-6 flex flex-col gap-1.5">
-            <span
-              :class="[
-                'block h-[2px] bg-text-primary transition-all duration-300 origin-center',
-                menuOpen ? 'rotate-45 translate-y-[5px]' : '',
-              ]"
-            />
-            <span
-              :class="[
-                'block h-[2px] bg-text-primary transition-all duration-300',
-                menuOpen ? 'opacity-0 scale-x-0' : '',
-              ]"
-            />
-            <span
-              :class="[
-                'block h-[2px] bg-text-primary transition-all duration-300 origin-center',
-                menuOpen ? '-rotate-45 -translate-y-[5px]' : '',
-              ]"
-            />
-          </div>
-        </button>
+        <!-- Mobile Right Controls (Toggle + Menu Button) -->
+        <div class="flex lg:hidden items-center gap-2 z-50 relative">
+          <ThemeToggle />
+          <button
+            class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-bg-hover/80 transition-colors"
+            :aria-expanded="menuOpen"
+            aria-label="Toggle navigation menu"
+            @click="toggleMenu"
+          >
+            <div class="w-6 flex flex-col gap-1.5">
+              <span
+                :class="[
+                  'block h-[2px] bg-text-primary transition-all duration-300 origin-center',
+                  menuOpen ? 'rotate-45 translate-y-[5px]' : '',
+                ]"
+              />
+              <span
+                :class="[
+                  'block h-[2px] bg-text-primary transition-all duration-300',
+                  menuOpen ? 'opacity-0 scale-x-0' : '',
+                ]"
+              />
+              <span
+                :class="[
+                  'block h-[2px] bg-text-primary transition-all duration-300 origin-center',
+                  menuOpen ? '-rotate-45 -translate-y-[5px]' : '',
+                ]"
+              />
+            </div>
+          </button>
+        </div>
       </nav>
     </div>
 
@@ -70,9 +76,9 @@
     <Transition name="mobile-menu">
       <div
         v-if="menuOpen"
-        class="fixed inset-0 bg-bg/98 backdrop-blur-sm z-40 flex flex-col items-center justify-center lg:hidden"
+        class="fixed inset-0 bg-bg/98 backdrop-blur-md z-40 flex flex-col items-center justify-center lg:hidden"
       >
-        <nav class="flex flex-col items-center gap-8" aria-label="Mobile navigation">
+        <nav class="flex flex-col items-center gap-6 sm:gap-8" aria-label="Mobile navigation">
           <a
             v-for="(link, i) in nav.links"
             :key="link.href"
@@ -83,13 +89,18 @@
           >
             {{ link.label }}
           </a>
-          <a
-            :href="nav.cta.href"
-            class="mt-4 inline-flex items-center gap-2 px-8 py-4 text-sm font-display font-medium tracking-widest uppercase bg-accent text-white hover:bg-accent-hover transition-colors duration-300"
-            @click="closeMenu"
-          >
-            {{ nav.cta.label }}
-          </a>
+
+          <div class="pt-2 flex flex-col items-center gap-4">
+            <ThemeToggle show-label class="px-5 py-2.5 bg-bg-card border border-border rounded-xl shadow-sm" />
+
+            <a
+              :href="nav.cta.href"
+              class="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-display font-medium tracking-widest uppercase bg-accent text-white hover:bg-accent-hover transition-colors duration-300 rounded-xl"
+              @click="closeMenu"
+            >
+              {{ nav.cta.label }}
+            </a>
+          </div>
         </nav>
       </div>
     </Transition>
@@ -99,6 +110,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { siteContent } from '@/data/siteContent.js'
+import ThemeToggle from '@/components/ui/ThemeToggle.vue'
 
 const nav = siteContent.nav
 const scrolled = ref(false)

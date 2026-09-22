@@ -25,7 +25,7 @@
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <div class="absolute bottom-6 left-6 right-6">
             <p class="text-xs font-display text-accent tracking-[0.2em] uppercase mb-1">Raw → Transform → Finish</p>
-            <p class="text-text-primary font-display font-medium text-sm sm:text-base">Meticulous surface preparation & curing</p>
+            <p class="text-white font-display font-medium text-sm sm:text-base">Meticulous surface preparation & curing</p>
           </div>
         </div>
       </div>

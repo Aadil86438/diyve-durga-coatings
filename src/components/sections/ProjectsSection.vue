@@ -31,7 +31,7 @@
               <span class="text-accent text-xs font-display tracking-[0.2em] uppercase">
                 {{ projects.items[0].category }}
               </span>
-              <h3 class="mt-2 font-display font-semibold text-xl sm:text-2xl tracking-tight text-text-primary group-hover:text-accent transition-colors duration-300">
+              <h3 class="mt-2 font-display font-semibold text-xl sm:text-2xl tracking-tight text-white group-hover:text-accent transition-colors duration-300">
                 {{ projects.items[0].title }}
               </h3>
               <div class="flex gap-4 mt-3 text-text-muted text-xs font-display tracking-wide uppercase">
@@ -63,7 +63,7 @@
                 <span class="text-accent text-xs font-display tracking-[0.2em] uppercase">
                   {{ item.category }}
                 </span>
-                <h3 class="mt-1.5 font-display font-semibold text-base sm:text-lg tracking-tight text-text-primary group-hover:text-accent transition-colors duration-300">
+                <h3 class="mt-1.5 font-display font-semibold text-base sm:text-lg tracking-tight text-white group-hover:text-accent transition-colors duration-300">
                   {{ item.title }}
                 </h3>
                 <div class="flex gap-3 mt-2 text-text-muted text-[11px] font-display tracking-wide uppercase">
@@ -89,7 +89,7 @@
                 <span class="text-accent text-xs font-display tracking-[0.2em] uppercase">
                   {{ projects.items[3].category }}
                 </span>
-                <h3 class="mt-2 font-display font-semibold text-xl sm:text-2xl tracking-tight text-text-primary group-hover:text-accent transition-colors duration-300">
+                <h3 class="mt-2 font-display font-semibold text-xl sm:text-2xl tracking-tight text-white group-hover:text-accent transition-colors duration-300">
                   {{ projects.items[3].title }}
                 </h3>
                 <div class="flex gap-4 mt-2 text-text-muted text-xs font-display tracking-wide uppercase">

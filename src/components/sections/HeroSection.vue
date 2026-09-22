@@ -11,7 +11,7 @@
         class="w-full h-full object-cover opacity-40 object-center"
       />
       <!-- Gradient overlay -->
-      <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-bg z-10" />
+      <div class="absolute inset-0 bg-gradient-to-b from-bg/90 via-bg/75 to-bg z-10" />
       <!-- Ambient grain texture -->
       <div class="absolute inset-0 opacity-[0.03] z-10" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 256 256%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E');" />
       <!-- Decorative lines -->

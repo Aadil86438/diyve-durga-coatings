@@ -54,7 +54,7 @@
       class="absolute top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center pointer-events-none"
       :style="{ left: `${position * 100}%`, transform: 'translate(-50%, -50%)' }"
     >
-      <svg class="w-5 h-5 text-bg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <svg class="w-5 h-5 text-neutral-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l-3 3 3 3m8-6l3 3-3 3" />
       </svg>
     </div>

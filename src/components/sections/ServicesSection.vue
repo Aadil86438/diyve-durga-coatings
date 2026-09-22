@@ -78,10 +78,10 @@
               <span class="text-xs font-display text-accent tracking-[0.2em] uppercase block mb-1">
                 Service {{ services.items[activeIndex].number }}
               </span>
-              <p class="font-display font-bold text-xl text-text-primary">
+              <p class="font-display font-bold text-xl text-white">
                 {{ services.items[activeIndex].title }}
               </p>
-              <p class="text-text-secondary text-sm mt-1">
+              <p class="text-white/80 text-sm mt-1">
                 {{ services.items[activeIndex].description }}
               </p>
             </div>

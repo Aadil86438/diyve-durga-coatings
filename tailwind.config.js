@@ -4,28 +4,29 @@ export default {
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         bg: {
-          DEFAULT: '#0A0A0A',
-          elevated: '#141414',
-          card: '#1A1A1A',
-          hover: '#222222',
+          DEFAULT: 'rgb(var(--color-bg) / <alpha-value>)',
+          elevated: 'rgb(var(--color-bg-elevated) / <alpha-value>)',
+          card: 'rgb(var(--color-bg-card) / <alpha-value>)',
+          hover: 'rgb(var(--color-bg-hover) / <alpha-value>)',
         },
         text: {
-          primary: '#F5F0EB',
-          secondary: '#9A9A9A',
-          muted: '#666666',
+          primary: 'rgb(var(--color-text-primary) / <alpha-value>)',
+          secondary: 'rgb(var(--color-text-secondary) / <alpha-value>)',
+          muted: 'rgb(var(--color-text-muted) / <alpha-value>)',
         },
         accent: {
-          DEFAULT: '#C87830',
-          hover: '#D9893F',
-          muted: 'rgba(200, 120, 48, 0.15)',
+          DEFAULT: 'rgb(var(--color-accent) / <alpha-value>)',
+          hover: 'rgb(var(--color-accent-hover) / <alpha-value>)',
+          muted: 'rgb(var(--color-accent-muted) / <alpha-value>)',
         },
         border: {
-          DEFAULT: '#2A2A2A',
-          hover: '#3A3A3A',
+          DEFAULT: 'rgb(var(--color-border) / <alpha-value>)',
+          hover: 'rgb(var(--color-border-hover) / <alpha-value>)',
         },
       },
       fontFamily: {
