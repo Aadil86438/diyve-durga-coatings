@@ -1,5 +1,5 @@
 /**
- * Diyve Durga Coatings Works — Centralized Site Content
+ * SIVASHAKTHI POWDER COATING — Centralized Site Content
  * =====================================================
  * All text content is maintained here for easy client editing.
  * Items marked [PLACEHOLDER] should be replaced with real data.
@@ -7,15 +7,16 @@
 
 export const siteContent = {
   brand: {
-    name: 'Divye Durga Coating Works',
-    shortName: 'Divye Durga',
-    tagline: 'Precision Powder Coating',
-    phone: '+91 8643839796',
-    email: 'info@divyedurga.com',
-    whatsapp: '918643839796',
-    whatsappMessage: '🌟 Hi Divye Durga Coating Works! 👑 I saw your precision powder coating work & would love an official quote for my metal components. Could you please assist me with custom pricing, finish options & priority batch turnaround? ⚡✨',
-    address: 'Coimbatore, Tamil Nadu',
-    location: 'Porur',
+    name: 'Sivashakthi Powder Coating',
+    shortName: 'Sivashakthi',
+    tagline: 'Hi-Tech Powder Coaters of All Colours',
+    gstin: '33AFQFS0271L1ZN',
+    phone: '+91 73584 22465',
+    email: 'sivashakthipc@gmail.com',
+    whatsapp: '917358422465',
+    whatsappMessage: '🌟 Hi Sivashakthi Powder Coating! 👑 I saw your hi-tech powder coating work & would love an official quote for my metal components. Could you please assist me with custom pricing, finish options & priority batch turnaround? ⚡✨',
+    address: 'No. 6, Arthi Industrial Estate, Kundrathur Road, Moulivakkam, Chennai - 600 125',
+    location: 'Moulivakkam, Chennai',
   },
 
   nav: {
@@ -30,10 +31,10 @@ export const siteContent = {
   },
 
   hero: {
-    eyebrow: 'Precision Powder Coating Services',
-    headline: 'Divye Durga Coating Works',
+    eyebrow: 'Hi-Tech Powder Coaters of All Colours',
+    headline: 'Sivashakthi Powder Coating',
     subheadline: 'Finished with Precision.',
-    description: 'Precision powder coating for components, structures, and industrial applications.',
+    description: 'Precision powder coating for components, structures, and industrial applications — serving all of Chennai.',
     primaryCta: { label: 'Request a Quote', href: '#quote' },
     secondaryCta: { label: 'Explore Our Work', href: '#projects' },
   },
@@ -231,8 +232,7 @@ export const siteContent = {
     eyebrow: 'Our Facility',
     headline: 'See Where the Work Happens.',
     description: 'Our coating facility is equipped to handle a diverse range of components with the precision and care they require.',
-    // [PLACEHOLDER] — Replace with real facility details
-    location: '[City, State — to be confirmed]',
+    location: 'No. 6, Arthi Industrial Estate, Kundrathur Road, Moulivakkam, Chennai - 600 125 (Near Shell Petrol Bunk)',
   },
 
   testimonials: {
@@ -271,8 +271,8 @@ export const siteContent = {
   },
 
   footer: {
-    description: 'Professional powder coating services for industrial components, structures, and custom applications.',
-    copyright: `© ${new Date().getFullYear()} Divye Durga Coating Works. All rights reserved.`,
+    description: 'Professional hi-tech powder coating services for industrial components, structures, and custom applications.',
+    copyright: `© ${new Date().getFullYear()} Sivashakthi Powder Coating. All rights reserved.`,
     sections: {
       navigation: { title: 'Navigation' },
       services: { title: 'Services' },
@@ -281,8 +281,8 @@ export const siteContent = {
   },
 
   seo: {
-    title: 'Divye Durga Coating Works | Precision Powder Coating',
-    description: 'Professional powder coating services for industrial components, structures, and custom applications. Precision finishing with durable, high-quality results.',
+    title: 'Sivashakthi Powder Coating | Hi-Tech Powder Coaters of All Colours',
+    description: 'Professional hi-tech powder coating services in Chennai. Sivashakthi Powder Coating — GSTIN 33AFQFS0271L1ZN. Moulivakkam, Chennai 600 125. Call +91 73584 22465.',
     ogImage: '',
   },
 }

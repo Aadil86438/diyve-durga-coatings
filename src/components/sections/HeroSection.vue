@@ -7,7 +7,7 @@
     <div class="absolute inset-0 bg-bg">
       <img
         src="@/assets/hero_orange_spray.png"
-        alt="Diyve Durga industrial powder coating process"
+        alt="Sivashakthi industrial powder coating process"
         class="w-full h-full object-cover opacity-40 object-center"
       />
       <!-- Gradient overlay -->

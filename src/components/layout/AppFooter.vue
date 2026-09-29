@@ -6,7 +6,7 @@
         <!-- Brand column -->
         <div class="sm:col-span-2 lg:col-span-1">
           <a href="#home" class="font-display font-bold text-xl tracking-tight text-text-primary">
-            <span class="text-accent">DIYVE</span> DURGA
+            <span class="text-accent">SIVASHAKTHI</span> POWDER COATING
           </a>
           <p class="mt-4 text-text-secondary text-sm leading-relaxed max-w-xs">
             {{ footer.description }}

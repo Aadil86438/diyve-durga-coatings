@@ -12,7 +12,7 @@
       <nav class="flex items-center justify-between h-16 sm:h-20" aria-label="Main navigation">
         <!-- Logo -->
         <a href="#home" class="font-display font-bold text-lg sm:text-xl tracking-tight text-text-primary z-50 relative">
-          <span class="text-accent">DIYVE</span> DURGA
+          <span class="text-accent">SIVASHAKTHI</span> POWDER COATING
         </a>
 
         <!-- Desktop nav -->

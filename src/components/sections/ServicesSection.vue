@@ -70,7 +70,7 @@
           <div class="relative w-full aspect-[4/5] bg-bg-card overflow-hidden group">
             <img
               src="@/assets/services_booth.png"
-              alt="Diyve Durga powder coating services"
+              alt="Sivashakthi powder coating services"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />

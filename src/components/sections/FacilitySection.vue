@@ -18,7 +18,7 @@
       <div class="grid lg:grid-cols-3 gap-4 sm:gap-5">
         <!-- Large main image -->
         <div class="lg:col-span-2 relative aspect-[16/10] lg:aspect-auto bg-bg-card overflow-hidden">
-          <img :src="facilityImg" alt="Diyve Durga Coating Workshop Floor" class="w-full h-full object-cover" />
+          <img :src="facilityImg" alt="Sivashakthi Powder Coating Workshop Floor" class="w-full h-full object-cover" />
           <!-- Gradient overlay bottom -->
           <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent" />
         </div>

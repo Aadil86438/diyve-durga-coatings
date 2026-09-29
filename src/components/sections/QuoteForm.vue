@@ -250,7 +250,7 @@
             
             <!-- Background Watermark -->
             <div class="absolute -right-8 -bottom-8 opacity-5 text-accent font-display font-bold text-8xl pointer-events-none select-none">
-              DDCW
+              SVPC
             </div>
 
             <!-- Bill Header -->
@@ -261,10 +261,10 @@
                     <span>🛡️ OFFICIAL ESTIMATE BILL</span>
                   </div>
                   <h4 class="font-display font-bold text-lg text-white tracking-tight flex items-center gap-2">
-                    DIVYE DURGA COATING WORKS
+                    SIVASHAKTHI POWDER COATING
                   </h4>
                   <p class="text-[11px] text-text-secondary mt-0.5">
-                    Porur, Coimbatore, Tamil Nadu • 📞 +91 8643839796
+                    Moulivakkam, Chennai 600 125 • 📞 +91 73584 22465
                   </p>
                 </div>
 
@@ -388,7 +388,7 @@
 
             <!-- Footer Lock Text -->
             <div class="mt-4 pt-3 border-t border-border/50 text-center text-[10px] text-text-muted">
-              <span>✨ Thank you for choosing Divye Durga Coating Works! ✨</span>
+              <span>✨ Thank you for choosing Sivashakthi Powder Coating! ✨</span>
             </div>
 
           </div>
@@ -412,7 +412,7 @@ const finishOptions = siteContent.finishes.items.map((f) => f.name)
 // Unique Estimate Reference ID
 const quoteRefNo = computed(() => {
   const code = Math.floor(1000 + Math.random() * 9000)
-  return `DDCW-EST-2026-${code}`
+  return `SVPC-EST-2026-${code}`
 })
 
 // Form state
@@ -473,8 +473,8 @@ function generateFormattedText() {
   const finish = form.value.finish ? form.value.finish.trim() : 'Metallic Coating Finish'
   const notes = form.value.message ? `\n\n📝 *CLIENT SPECIAL INSTRUCTIONS / NOTES:*\n"${form.value.message.trim()}"` : ''
 
-  return `🌟 *DIVYE DURGA COATING WORKS* 🌟
-🏛️ *PRECISION POWDER COATING • INDUSTRIAL FINISHING STUDIO*
+  return `🌟 *SIVASHAKTHI POWDER COATING* 🌟
+🏛️ *HI-TECH POWDER COATERS OF ALL COLOURS*
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 🧾 *OFFICIAL MATERIAL QUOTATION & BILL ESTIMATE*
 📌 *Estimate Ref ID:* #${quoteRefNo.value}
@@ -489,7 +489,7 @@ function generateFormattedText() {
 └ 🎨 *Finish Requested:* ${finish}
 ${notes}
 
-🛡️ *DIVYE DURGA COMPLIMENTARY LUXURY GUARANTEES:*
+🛡️ *SIVASHAKTHI QUALITY GUARANTEES:*
 ✅ *7-Tank Pre-Treatment:* Full Degreasing & Anti-Rust Phosphating 🧼
 ✅ *Electrostatic Precision Coating:* 100% Uniform Powder Adhesion ⚡
 ✅ *Thermal Chamber Curing:* Bonded at 180°C Curing Standards 🔥
@@ -498,7 +498,7 @@ ${notes}
 
 💎 *STATUS:* Ready for Instant Rate & Production Confirmation!
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-💬 *Respected Divye Durga Team, please confirm our custom rate estimate, color shade availability, and priority batch slot! Looking forward to working with you!* 🙏✨`
+💬 *Respected Sivashakthi Team, please confirm our custom rate estimate, color shade availability, and priority batch slot! Looking forward to working with you!* 🙏✨`
 }
 
 function submitForm() {
