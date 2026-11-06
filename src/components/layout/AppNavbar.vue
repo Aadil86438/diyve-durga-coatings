@@ -1,123 +1,104 @@
 <template>
   <header
-    ref="navbar"
     :class="[
-      'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
-      scrolled
-        ? 'bg-bg/90 backdrop-blur-md border-b border-border/50 shadow-sm'
-        : 'bg-transparent',
+      'sticky top-0 z-50 bg-bg-elevated border-b border-border',
+      scrolled ? 'shadow-sm' : '',
     ]"
   >
-    <div class="w-full max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8">
-      <nav class="flex items-center justify-between h-16 sm:h-20" aria-label="Main navigation">
-        <!-- Logo -->
-        <a href="#home" class="font-display font-bold text-lg sm:text-xl tracking-tight text-text-primary z-50 relative">
-          <span class="text-accent">SIVASHAKTHI</span> POWDER COATING
+    <div class="w-full max-w-[1120px] mx-auto px-4 sm:px-6">
+      <nav class="flex items-center justify-between gap-4 py-2" aria-label="Main navigation">
+        <a href="#home" class="flex items-center gap-3 min-w-0" aria-label="Sivashakthi Powder Coating home">
+          <img
+            src="@/assets/sivashakthi_logo.png"
+            alt="Sivashakthi Powder Coating"
+            class="h-[4.5rem] sm:h-[6.5rem] w-auto shrink-0"
+          />
+          <span class="leading-tight min-w-0 hidden sm:block">
+            <span class="block font-display font-bold text-[15px] sm:text-lg tracking-wide text-accent uppercase">
+              Sivashakthi
+            </span>
+            <span class="block font-display font-semibold text-xs sm:text-sm tracking-wide text-text-primary uppercase">
+              Powder Coating
+            </span>
+          </span>
         </a>
 
-        <!-- Desktop nav -->
-        <div class="hidden lg:flex items-center gap-8">
+        <div class="hidden lg:flex items-center gap-7">
           <a
             v-for="link in nav.links"
             :key="link.href"
             :href="link.href"
-            class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors duration-300 tracking-wide uppercase"
+            class="text-sm font-medium text-text-secondary hover:text-accent transition-colors"
           >
             {{ link.label }}
           </a>
         </div>
 
-        <!-- Desktop CTA & Theme Toggle -->
-        <div class="hidden lg:flex items-center gap-4">
-          <ThemeToggle />
+        <div class="hidden lg:flex items-center gap-3">
+          <a :href="`tel:${brand.phone}`" class="text-sm font-semibold text-text-primary hover:text-accent">
+            {{ brand.phoneDisplay }}
+          </a>
           <a
             :href="nav.cta.href"
-            class="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-display font-medium tracking-widest uppercase bg-accent text-white hover:bg-accent-hover transition-colors duration-300 min-h-[40px] rounded-lg shadow-sm"
+            class="inline-flex items-center px-4 py-2.5 text-sm font-display font-semibold bg-accent text-white hover:bg-accent-hover transition-colors"
           >
             {{ nav.cta.label }}
           </a>
         </div>
 
-        <!-- Mobile Right Controls (Toggle + Menu Button) -->
-        <div class="flex lg:hidden items-center gap-2 z-50 relative">
-          <ThemeToggle />
-          <button
-            class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-bg-hover/80 transition-colors"
-            :aria-expanded="menuOpen"
-            aria-label="Toggle navigation menu"
-            @click="toggleMenu"
-          >
-            <div class="w-6 flex flex-col gap-1.5">
-              <span
-                :class="[
-                  'block h-[2px] bg-text-primary transition-all duration-300 origin-center',
-                  menuOpen ? 'rotate-45 translate-y-[5px]' : '',
-                ]"
-              />
-              <span
-                :class="[
-                  'block h-[2px] bg-text-primary transition-all duration-300',
-                  menuOpen ? 'opacity-0 scale-x-0' : '',
-                ]"
-              />
-              <span
-                :class="[
-                  'block h-[2px] bg-text-primary transition-all duration-300 origin-center',
-                  menuOpen ? '-rotate-45 -translate-y-[5px]' : '',
-                ]"
-              />
-            </div>
-          </button>
-        </div>
+        <button
+          class="lg:hidden w-11 h-11 flex items-center justify-center"
+          :aria-expanded="menuOpen"
+          aria-label="Open menu"
+          @click="toggleMenu"
+        >
+          <svg v-if="menuOpen" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+          <svg v-else class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
       </nav>
     </div>
 
-    <!-- Mobile menu overlay -->
-    <Transition name="mobile-menu">
-      <div
-        v-if="menuOpen"
-        class="fixed inset-0 bg-bg/98 backdrop-blur-md z-40 flex flex-col items-center justify-center lg:hidden"
-      >
-        <nav class="flex flex-col items-center gap-6 sm:gap-8" aria-label="Mobile navigation">
-          <a
-            v-for="(link, i) in nav.links"
-            :key="link.href"
-            :href="link.href"
-            class="text-2xl sm:text-3xl font-display font-bold tracking-tight text-text-primary hover:text-accent transition-colors duration-300"
-            :style="{ animationDelay: `${i * 60}ms` }"
-            @click="closeMenu"
-          >
-            {{ link.label }}
-          </a>
-
-          <div class="pt-2 flex flex-col items-center gap-4">
-            <ThemeToggle show-label class="px-5 py-2.5 bg-bg-card border border-border rounded-xl shadow-sm" />
-
-            <a
-              :href="nav.cta.href"
-              class="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-display font-medium tracking-widest uppercase bg-accent text-white hover:bg-accent-hover transition-colors duration-300 rounded-xl"
-              @click="closeMenu"
-            >
-              {{ nav.cta.label }}
-            </a>
-          </div>
-        </nav>
-      </div>
-    </Transition>
+    <div v-if="menuOpen" class="lg:hidden border-t border-border bg-bg-elevated">
+      <nav class="max-w-[1120px] mx-auto px-4 py-4 flex flex-col gap-1" aria-label="Mobile navigation">
+        <a
+          v-for="link in nav.links"
+          :key="link.href"
+          :href="link.href"
+          class="py-3 text-lg font-display font-semibold text-text-primary"
+          @click="closeMenu"
+        >
+          {{ link.label }}
+        </a>
+        <a :href="`tel:${brand.phone}`" class="py-3 text-lg font-display font-semibold text-accent" @click="closeMenu">
+          {{ brand.phoneDisplay }}
+        </a>
+        <a
+          :href="nav.cta.href"
+          class="mt-2 inline-flex justify-center px-4 py-3 bg-accent text-white font-display font-semibold"
+          @click="closeMenu"
+        >
+          {{ nav.cta.label }}
+        </a>
+      </nav>
+    </div>
   </header>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { siteContent } from '@/data/siteContent.js'
-import ThemeToggle from '@/components/ui/ThemeToggle.vue'
 
 const nav = siteContent.nav
+const brand = siteContent.brand
 const scrolled = ref(false)
 const menuOpen = ref(false)
 
 function handleScroll() {
-  scrolled.value = window.scrollY > 50
+  scrolled.value = window.scrollY > 8
 }
 
 function toggleMenu() {
@@ -140,14 +121,3 @@ onUnmounted(() => {
   document.body.classList.remove('scroll-locked')
 })
 </script>
-
-<style scoped>
-.mobile-menu-enter-active,
-.mobile-menu-leave-active {
-  transition: opacity 0.3s ease;
-}
-.mobile-menu-enter-from,
-.mobile-menu-leave-to {
-  opacity: 0;
-}
-</style>

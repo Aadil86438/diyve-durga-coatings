@@ -4,32 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Anti-FOUC Theme Script -->
     <script>
-      (function() {
-        try {
-          var saved = localStorage.getItem('theme');
-          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (saved === 'light' || (!saved && !prefersDark)) {
-            document.documentElement.classList.add('light');
-            document.documentElement.classList.remove('dark');
-          } else {
-            document.documentElement.classList.add('dark');
-            document.documentElement.classList.remove('light');
-          }
-        } catch (e) {
-          document.documentElement.classList.add('dark');
-        }
-      })();
+      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
     </script>
 
     <!-- SEO -->
-    <title>Sivashakthi Powder Coating | Hi-Tech Powder Coaters of All Colours</title>
-    <meta name="description" content="Professional hi-tech powder coating services in Chennai. Sivashakthi Powder Coating — GSTIN 33AFQFS0271L1ZN. Moulivakkam, Chennai 600 125. Call +91 73584 22465." />
+    <title>Sivashakthi Powder Coating | Hi-Tech Powder Coaters of All Colours | Chennai</title>
+    <meta name="description" content="Sivashakthi Powder Coating — professional powder coating services in Chennai for MS, GI, Aluminium and all metal parts. Zinc Phosphate pre-treatment, large 12-feet electric curing oven. Located at Moulivakkam, Chennai. GSTIN: 33AFQFS0271L1ZN. Call +91 73584 22465." />
+    <meta name="keywords" content="powder coating Chennai, powder coating Moulivakkam, metal powder coating, industrial powder coating Chennai, MS powder coating, aluminium powder coating, Sivashakthi powder coating" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Sivashakthi Powder Coating | Hi-Tech Powder Coaters of All Colours" />
-    <meta property="og:description" content="Professional hi-tech powder coating services in Chennai. Serving all colours and finishes from Moulivakkam, Chennai." />
+    <meta property="og:title" content="Sivashakthi Powder Coating | Hi-Tech Powder Coaters of All Colours | Chennai" />
+    <meta property="og:description" content="Professional powder coating for metal parts in Chennai. MS, GI, Aluminium and all materials. Call +91 73584 22465 for a quote." />
     <meta property="og:type" content="website" />
 
     <!-- Favicon -->
@@ -38,7 +25,7 @@
     <!-- Google Fonts: Space Grotesk + Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="app"></div>

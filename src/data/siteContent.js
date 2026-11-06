@@ -1,8 +1,6 @@
 /**
- * SIVASHAKTHI POWDER COATING — Centralized Site Content
- * =====================================================
- * All text content is maintained here for easy client editing.
- * Items marked [PLACEHOLDER] should be replaced with real data.
+ * SIVASHAKTHI POWDER COATING
+ * Copy follows the company presentation.
  */
 
 export const siteContent = {
@@ -12,277 +10,158 @@ export const siteContent = {
     tagline: 'Hi-Tech Powder Coaters of All Colours',
     gstin: '33AFQFS0271L1ZN',
     phone: '+91 73584 22465',
+    phoneDisplay: '73584 22465',
     email: 'sivashakthipc@gmail.com',
     whatsapp: '917358422465',
-    whatsappMessage: '🌟 Hi Sivashakthi Powder Coating! 👑 I saw your hi-tech powder coating work & would love an official quote for my metal components. Could you please assist me with custom pricing, finish options & priority batch turnaround? ⚡✨',
+    whatsappMessage:
+      'Hi Sivashakthi Powder Coating, I would like a quote for powder coating. Please share the rate and finish options.',
     address: 'No. 6, Arthi Industrial Estate, Kundrathur Road, Moulivakkam, Chennai - 600 125',
     location: 'Moulivakkam, Chennai',
   },
 
   nav: {
     links: [
-      { label: 'Home', href: '#home' },
-      { label: 'Services', href: '#services' },
       { label: 'Process', href: '#process' },
-      { label: 'Projects', href: '#projects' },
-      { label: 'About', href: '#about' },
+      { label: 'Industries', href: '#industries' },
+      { label: 'Oven', href: '#oven' },
+      { label: 'Contact', href: '#quote' },
     ],
-    cta: { label: 'Request a Quote', href: '#quote' },
+    cta: { label: 'Get a Quote', href: '#quote' },
   },
 
   hero: {
     eyebrow: 'Hi-Tech Powder Coaters of All Colours',
     headline: 'Sivashakthi Powder Coating',
-    subheadline: 'Finished with Precision.',
-    description: 'Precision powder coating for components, structures, and industrial applications — serving all of Chennai.',
-    primaryCta: { label: 'Request a Quote', href: '#quote' },
-    secondaryCta: { label: 'Explore Our Work', href: '#projects' },
+    subheadline: 'A hard, even finish for metal parts.',
+    description:
+      'We coat fabricated metal — MS, GI, aluminium and casting — at our plant in Moulivakkam, Chennai. Clean, spray, cure in a 12-foot electric oven, then inspect before it leaves.',
+    primaryCta: { label: 'Get a Quote', href: '#quote' },
+    secondaryCta: { label: 'Call 73584 22465', href: 'tel:+917358422465' },
   },
 
   intro: {
-    headline: 'Metal is Only the Beginning.',
-    description: 'Every great finish starts with raw material. Through meticulous preparation, precise powder application, and controlled curing, we transform bare metal into components built to endure.',
-  },
-
-  services: {
-    eyebrow: 'Our Expertise',
-    headline: 'What We Finish.',
-    items: [
+    eyebrow: 'What is Powder Coating',
+    headline: 'Dry colour. Then heat. Then a finish that stays.',
+    points: [
       {
-        number: '01',
-        title: 'Industrial Components',
-        description: 'Durable coating solutions for heavy-duty industrial parts and machinery components.',
+        title: 'Charged powder on metal',
+        text: 'Electrostatically charged powder is sprayed onto fabricated work pieces — MS, GI, aluminium and casting.',
       },
       {
-        number: '02',
-        title: 'Aluminium Components',
-        description: 'Precision finishing for aluminium profiles, extrusions, and fabricated parts.',
+        title: 'A dry process',
+        text: 'There is no liquid paint, so the coat goes on even, without drips or runs.',
       },
       {
-        number: '03',
-        title: 'Electrical Enclosures',
-        description: 'Protective and aesthetic coatings for electrical panels, boxes, and enclosures.',
+        title: 'Cured with heat',
+        text: 'The part is baked between 110°C and 150°C. Time depends on the powder and the size of the part.',
       },
       {
-        number: '04',
-        title: 'Fabricated Components',
-        description: 'Custom coating for welded, cut, and formed metal fabrications.',
-      },
-      {
-        number: '05',
-        title: 'Automotive Components',
-        description: 'High-performance finishes for automotive parts requiring durability and precision.',
-      },
-      {
-        number: '06',
-        title: 'Custom Requirements',
-        description: 'Tailored coating solutions for unique specifications and special projects.',
+        title: '15 to 20 years',
+        text: 'Applied and looked after properly, the finish lasts 15 to 20 years.',
       },
     ],
   },
 
   process: {
     eyebrow: 'How We Work',
-    headline: 'Precision is a Process.',
-    description: 'Every component passes through a carefully controlled sequence designed to deliver a finish that performs as good as it looks.',
+    headline: 'Four steps. Same order, every batch.',
+    description: 'Cleaning, coating, curing, inspection.',
     stages: [
       {
         number: '01',
-        title: 'Surface Preparation',
-        description: 'Components are cleaned and prepared to ensure optimal coating adhesion and longevity.',
+        title: 'Cleaning',
+        description: 'Parts are cleaned in a zinc phosphate and FRP tank so rust, grease and dirt are off the metal before any powder goes on.',
       },
       {
         number: '02',
-        title: 'Pre-Treatment',
-        description: 'Chemical treatment creates a protective layer that enhances corrosion resistance.',
+        title: 'Powder coating',
+        description: 'Dry powder is sprayed with an electrostatic gun so the colour wraps the part evenly.',
       },
       {
         number: '03',
-        title: 'Powder Application',
-        description: 'Electrostatically charged powder is applied with precision for uniform coverage.',
+        title: 'Oven curing',
+        description: 'Coated parts go into the electric oven. The powder melts, flows and bonds into a hard skin.',
       },
       {
         number: '04',
-        title: 'Curing',
-        description: 'Components are cured at controlled temperatures to bond the coating permanently.',
-      },
-      {
-        number: '05',
-        title: 'Quality Inspection',
-        description: 'Every finished piece is inspected to ensure it meets our exacting standards.',
-      },
-    ],
-  },
-
-  beforeAfter: {
-    eyebrow: 'The Transformation',
-    headline: 'From Raw to Refined.',
-    description: 'See the difference precision powder coating makes.',
-    beforeLabel: 'Before',
-    afterLabel: 'After',
-  },
-
-  projects: {
-    eyebrow: 'Our Portfolio',
-    headline: 'Work That Speaks for Itself.',
-    description: 'A selection of real client components and batch orders finished at our facility.',
-    items: [
-      {
-        title: 'Modular Lab Workstations',
-        category: 'Commercial Furniture',
-        finish: 'Dual-Tone Maroon & Off-White',
-        material: 'CRCA Steel Cabinetry',
-        featured: true,
-      },
-      {
-        title: 'Industrial Batch Curing Oven',
-        category: 'Heavy Equipment',
-        finish: 'Gloss Maroon / Burgundy',
-        material: 'Fabricated Steel Frames',
-        featured: false,
-      },
-      {
-        title: 'Architectural Window Grills',
-        category: 'Building & Construction',
-        finish: 'Pure White Satin',
-        material: 'MS Hollow Sections',
-        featured: false,
-      },
-      {
-        title: 'Dispatch-Ready Sheet Panels',
-        category: 'Custom Metal Enclosures',
-        finish: 'Textured & Matte Maroon',
-        material: 'Laser Cut Sheet Metal',
-        featured: true,
-      },
-    ],
-  },
-
-  finishes: {
-    eyebrow: 'Surface Options',
-    headline: 'The Finish Defines the Product.',
-    description: 'We offer a range of finishes to match your functional and aesthetic requirements.',
-    items: [
-      {
-        name: 'Matte',
-        description: 'A smooth, non-reflective surface that provides a clean contemporary appearance. Ideal for industrial and architectural applications.',
-        color: '#2D2D2D',
-      },
-      {
-        name: 'Satin',
-        description: 'A soft sheen that balances between matte and gloss. Offers a refined, understated finish suitable for visible components.',
-        color: '#4A4A4A',
-      },
-      {
-        name: 'Gloss',
-        description: 'A high-shine surface that delivers maximum visual impact. Best suited for decorative and consumer-facing applications.',
-        color: '#5C5C5C',
-      },
-      {
-        name: 'Textured',
-        description: 'A tactile surface with subtle grain that masks minor imperfections. Excellent for high-traffic and outdoor applications.',
-        color: '#3A3530',
-      },
-      {
-        name: 'Metallic',
-        description: 'A finish with fine metallic particles that create depth and visual interest. Adds a premium character to any component.',
-        color: '#6B6560',
+        title: 'Inspection',
+        description: 'Every part is checked before it is taken down for delivery. Only approved parts leave the plant.',
       },
     ],
   },
 
   industries: {
-    eyebrow: 'Applications',
-    headline: 'Where Our Work Goes.',
-    items: [
-      // [PLACEHOLDER] — Confirm categories with client
-      { name: 'Automotive', description: 'Parts and components for the automotive sector.' },
-      { name: 'Electrical', description: 'Enclosures, panels, and electrical housings.' },
-      { name: 'Industrial', description: 'Heavy-duty machinery and industrial equipment.' },
-      { name: 'Fabrication', description: 'Custom fabricated structures and assemblies.' },
-      { name: 'Construction', description: 'Structural components and architectural elements.' },
-      { name: 'Furniture', description: 'Metal furniture frames and fixtures.' },
-    ],
-  },
-
-  whyUs: {
-    eyebrow: 'Why Choose Us',
-    headline: 'Built on Fundamentals.',
+    eyebrow: 'Where It Is Used',
+    headline: 'Parts we coat.',
+    description: 'If it is metal and it needs a lasting colour, we can take it.',
     items: [
       {
-        title: 'Precision',
-        description: 'Every component is coated with exacting attention to coverage, thickness, and uniformity.',
+        name: 'Appliances',
+        parts: 'Microwave ovens, refrigerators, vending machines, panels and components, washers, dryers and cots.',
       },
       {
-        title: 'Consistency',
-        description: 'Our controlled processes ensure the same quality standard across every batch.',
+        name: 'Outdoor products',
+        parts: 'Metal furniture, lawn chairs, park and farm equipment, sports equipment, sign-board letters.',
       },
       {
-        title: 'Craftsmanship',
-        description: 'We treat every component with the care it deserves, regardless of batch size.',
+        name: 'Architecture and construction',
+        parts: 'Window and door frames, gates, fencing and poles, building facades, rolling shutters.',
       },
       {
-        title: 'Reliability',
-        description: 'When we commit to a timeline and specification, we deliver.',
+        name: 'Automotive',
+        parts: 'Door handles, trims and bumpers, shock absorbers, battery trays, alloy wheels and hubcaps, motorbike frames.',
+      },
+      {
+        name: 'Structural and industrial',
+        parts: 'Angles, channels, square bar, pipes, poles, frames, ladders, handrails, control panels, switchboards, flanges, elevator springs.',
       },
     ],
   },
 
-  facility: {
-    eyebrow: 'Our Facility',
-    headline: 'See Where the Work Happens.',
-    description: 'Our coating facility is equipped to handle a diverse range of components with the precision and care they require.',
-    location: 'No. 6, Arthi Industrial Estate, Kundrathur Road, Moulivakkam, Chennai - 600 125 (Near Shell Petrol Bunk)',
+  oven: {
+    eyebrow: 'Our Equipment',
+    headline: 'A 12-foot electric curing oven.',
+    description:
+      'Powder is cured in the oven so the colour melts, flows and bonds to the metal. The result is a hard, continuous coat.',
+    advantages: [
+      { title: 'Power source', text: 'Electric heating elements. No combustion and no fuel flame inside the oven.' },
+      { title: 'Temperature control', text: 'The set temperature is held through the cure, between 110°C and 150°C.' },
+      { title: 'Heat distribution', text: 'Heat is spread so the coat cures evenly, without hot or cold spots.' },
+      { title: 'Energy use', text: 'Insulation keeps the heat in and the running cost down.' },
+      { title: 'Ventilation', text: 'Airflow clears fumes and keeps the curing space clean.' },
+      { title: 'Safety', text: 'Over-temperature protection, emergency shut-off, and alarms.' },
+    ],
+    how: [
+      { title: 'Application', text: 'Powder is sprayed onto the part.' },
+      { title: 'Into the oven', text: 'The coated part is placed inside.' },
+      { title: 'Heating', text: 'The oven reaches the temperature the powder needs.' },
+      { title: 'Curing', text: 'The powder melts and fuses into one coat.' },
+      { title: 'Cooling', text: 'The part cools and the coat hardens.' },
+    ],
   },
 
-  testimonials: {
-    eyebrow: 'Client Feedback',
-    headline: 'What Our Clients Say.',
-    // [PLACEHOLDER] — Only include real testimonials
-    items: [],
-    placeholder: 'Client testimonials will be added here once provided.',
+  plant: {
+    eyebrow: 'At the Plant',
+    headline: 'Coated, cured, and ready to go.',
+    description: 'Parts hang on the line after coating, then move out for delivery from Moulivakkam.',
   },
 
-  cta: {
-    headline: 'Have a Component Ready to Coat?',
-    description: 'Tell us what you\'re working with and our team can discuss your coating requirement.',
-    primaryCta: { label: 'Request a Quote', href: '#quote' },
-    whatsappLabel: 'WhatsApp',
-    callLabel: 'Call Us',
+  owner: {
+    role: 'Proprietor',
+    note: 'Looks after the coating, the oven cure, and your quote.',
   },
 
   quote: {
-    eyebrow: 'Get Started',
-    headline: 'Request a Quote.',
-    description: 'Share your project details and we\'ll get back to you with a coating solution.',
-    fields: {
-      name: 'Your Name',
-      company: 'Company Name',
-      phone: 'Phone Number',
-      email: 'Email Address',
-      material: 'Material Type',
-      quantity: 'Approximate Quantity',
-      finish: 'Required Finish',
-      message: 'Project Details',
-      upload: 'Upload Component Photo',
-    },
-    submitLabel: 'Send Enquiry via WhatsApp',
-    disclaimer: 'Your enquiry will be sent via WhatsApp. No data is stored on this website.',
+    eyebrow: 'Get a Quote',
+    headline: 'Tell us what you need coated.',
+    description: 'Material, quantity and the finish you want. We reply with the rate and the time.',
+    submitLabel: 'Send on WhatsApp',
+    disclaimer: 'This opens WhatsApp with your message. Nothing is stored on the website.',
+    finishes: ['Matte', 'Satin', 'Gloss', 'Textured', 'Metallic', 'Not sure yet'],
   },
 
   footer: {
-    description: 'Professional hi-tech powder coating services for industrial components, structures, and custom applications.',
-    copyright: `© ${new Date().getFullYear()} Sivashakthi Powder Coating. All rights reserved.`,
-    sections: {
-      navigation: { title: 'Navigation' },
-      services: { title: 'Services' },
-      contact: { title: 'Contact' },
-    },
-  },
-
-  seo: {
-    title: 'Sivashakthi Powder Coating | Hi-Tech Powder Coaters of All Colours',
-    description: 'Professional hi-tech powder coating services in Chennai. Sivashakthi Powder Coating — GSTIN 33AFQFS0271L1ZN. Moulivakkam, Chennai 600 125. Call +91 73584 22465.',
-    ogImage: '',
+    description: 'Powder coating for metal parts. MS, GI, aluminium and casting. Moulivakkam, Chennai.',
+    copyright: `© ${new Date().getFullYear()} Sivashakthi Powder Coating. GSTIN 33AFQFS0271L1ZN`,
   },
 }
